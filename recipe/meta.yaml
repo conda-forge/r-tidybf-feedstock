@@ -1,4 +1,4 @@
-{% set version = '0.2.0' %}
+{% set version = "0.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidyBF_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidyBF/tidyBF_{{ version }}.tar.gz
-  sha256: 3ec1aa0c81e90f89c4a0e6d20feedb8d3f8a4a3d0e40f62fb9ea1d8dff81855e
+  sha256: 32171ad845d6fd5a7312536542cd56ef4877f364008e01d838794f4d9bd8e8b6
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -48,14 +48,11 @@ test:
 about:
   home: https://indrajeetpatil.github.io/tidyBF/, https://github.com/IndrajeetPatil/tidyBF
   license: GPL-3
-  summary: Provides helper functions that make it easy to run 'BayesFactor' package tests on
-    a data which is in a tidy format. Additionally, it provides a more consistent syntax
-    and by default returns a dataframe with rich details. These functions can also return
-    expressions containing results from Bayes Factor tests that can then be displayed
-    on custom plots.
+  summary: Provides helper functions that make it easy to run 'BayesFactor' package tests on a data which is in a tidy format. Additionally, it provides a more consistent syntax and by default returns a dataframe with rich details. These functions can also return expressions containing results from Bayes Factor tests that
+    can then be displayed on custom plots.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
     - LICENSE
 
 extra:
