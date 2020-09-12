@@ -3,7 +3,7 @@ About r-tidybf
 
 Home: https://indrajeetpatil.github.io/tidyBF/, https://github.com/IndrajeetPatil/tidyBF
 
-Package license: GPL-3
+Package license: GPL-3.0-only
 
 Feedstock license: BSD-3-Clause
 
