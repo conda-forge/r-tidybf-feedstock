@@ -5,11 +5,9 @@ Home: https://indrajeetpatil.github.io/tidyBF/, https://github.com/IndrajeetPati
 
 Package license: GPL-3.0-only
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tidybf-feedstock/blob/master/LICENSE.txt)
 
 Summary: Provides helper functions that make it easy to run 'BayesFactor' package tests on a data which is in a tidy format. Additionally, it provides a more consistent syntax and by default returns a dataframe with rich details. These functions can also return expressions containing results from Bayes Factor tests that can then be displayed on custom plots.
-
-
 
 Current build status
 ====================
