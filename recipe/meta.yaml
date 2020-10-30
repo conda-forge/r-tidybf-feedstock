@@ -26,19 +26,27 @@ requirements:
   host:
     - r-base
     - r-bayesfactor
-    - r-broomextra
     - r-dplyr
-    - r-ipmisc
-    - r-metabma
+    - r-effectsize >=0.4.0
+    - r-insight >=0.10.0
+    - r-ipmisc >=4.1.0
+    - r-lme4
+    - r-metabma >=0.6.5
+    - r-parameters >=0.9.0
+    - r-performance >=0.5.1
     - r-rlang
     - r-tidyr
   run:
     - r-base
     - r-bayesfactor
-    - r-broomextra
     - r-dplyr
-    - r-ipmisc
-    - r-metabma
+    - r-effectsize >=0.4.0
+    - r-insight >=0.10.0
+    - r-ipmisc >=4.1.0
+    - r-lme4
+    - r-metabma >=0.6.5
+    - r-parameters >=0.9.0
+    - r-performance >=0.5.1
     - r-rlang
     - r-tidyr
 
