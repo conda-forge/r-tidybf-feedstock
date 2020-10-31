@@ -1,4 +1,4 @@
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidyBF_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidyBF/tidyBF_{{ version }}.tar.gz
-  sha256: 5a25fa4fc8545bafce58189f8208161ee999ac2826bf30886bda3f55642de360
+  sha256: 32e94b426503d762ac9f9b9e5f6ab1a1d4ac5d5bc881ae417640319103633c55
 
 build:
   merge_build_host: true  # [win]
@@ -26,19 +26,27 @@ requirements:
   host:
     - r-base
     - r-bayesfactor
-    - r-broomextra
     - r-dplyr
-    - r-ipmisc
-    - r-metabma
+    - r-effectsize >=0.4.0
+    - r-insight >=0.10.0
+    - r-ipmisc >=4.1.0
+    - r-lme4
+    - r-metabma >=0.6.5
+    - r-parameters >=0.9.0
+    - r-performance >=0.5.1
     - r-rlang
     - r-tidyr
   run:
     - r-base
     - r-bayesfactor
-    - r-broomextra
     - r-dplyr
-    - r-ipmisc
-    - r-metabma
+    - r-effectsize >=0.4.0
+    - r-insight >=0.10.0
+    - r-ipmisc >=4.1.0
+    - r-lme4
+    - r-metabma >=0.6.5
+    - r-parameters >=0.9.0
+    - r-performance >=0.5.1
     - r-rlang
     - r-tidyr
 
