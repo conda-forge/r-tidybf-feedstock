@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.4.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidyBF_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidyBF/tidyBF_{{ version }}.tar.gz
-  sha256: 32e94b426503d762ac9f9b9e5f6ab1a1d4ac5d5bc881ae417640319103633c55
+  sha256: 2afc94fb885a42100be6e5bf71d63cc964bb537d130abdca516dfd459a4fb8c8
 
 build:
   merge_build_host: true  # [win]
